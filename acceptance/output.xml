@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_91)" generated="20160824 09:30:02.833">
+<suite source="/home/nathan/Documents/school/CS_310/projects/jsu-se-hello-world/acceptance/HelloWorldTests.txt" name="HelloWorldTests" id="s1">
+<test name="Say Hello" id="s1-t1">
+<kw type="kw" name="Greet everyone">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20160824 09:30:03.115">No keyword with name 'Greet everyone' found.</msg>
+<status endtime="20160824 09:30:03.116" starttime="20160824 09:30:03.113" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20160824 09:30:03.119" starttime="20160824 09:30:03.107" status="FAIL">No keyword with name 'Greet everyone' found.</status>
+</test>
+<test name="Say Hello In Pig Latin" id="s1-t2">
+<kw type="kw" name="Reverse greet everyone">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20160824 09:30:03.129">No keyword with name 'Reverse greet everyone' found.</msg>
+<status endtime="20160824 09:30:03.129" starttime="20160824 09:30:03.128" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20160824 09:30:03.131" starttime="20160824 09:30:03.122" status="FAIL">No keyword with name 'Reverse greet everyone' found.</status>
+</test>
+<test name="Make Sure You're Saying Hello" id="s1-t3">
+<kw type="kw" name="${result} = Greet everyone">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20160824 09:30:03.276">No keyword with name 'Greet everyone' found.</msg>
+<status endtime="20160824 09:30:03.277" starttime="20160824 09:30:03.273" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20160824 09:30:03.279" starttime="20160824 09:30:03.133" status="FAIL">No keyword with name 'Greet everyone' found.</status>
+</test>
+<test name="Make A Test That Fails" id="s1-t4">
+<kw type="kw" name="${result} = Reverse greet everyone">
+<doc></doc>
+<arguments>
+</arguments>
+<msg level="FAIL" timestamp="20160824 09:30:03.287">No keyword with name 'Reverse greet everyone' found.</msg>
+<status endtime="20160824 09:30:03.288" starttime="20160824 09:30:03.286" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20160824 09:30:03.288" starttime="20160824 09:30:03.282" status="FAIL">No keyword with name 'Reverse greet everyone' found.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status endtime="20160824 09:30:03.292" starttime="20160824 09:30:02.837" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4">Critical Tests</stat>
+<stat pass="0" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" name="HelloWorldTests" id="s1">HelloWorldTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20160824 09:30:03.098">Error in file '/home/nathan/Documents/school/CS_310/projects/jsu-se-hello-world/acceptance/HelloWorldTests.txt': Initializing test library 'HelloWorldKeywords' with no arguments failed: NoClassDefFoundError: edu/jsu/mcis/HelloWorld
+java.lang.NoClassDefFoundError: 
+	at HelloWorldKeywords.&lt;init&gt;(HelloWorldKeywords.java:4)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
+	at robot.run$py.main$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:408)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.utils.application$py._execute$11(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:98)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.utils.application$py.execute_cli$5(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:45)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.run$py.run_cli$7(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:432)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.jarrunner$py._run$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:60)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at robot.jarrunner$py.run$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:53)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at org.robotframework.RobotFramework.run(RobotFramework.java:62)
+	at org.robotframework.RobotFramework.main(RobotFramework.java:37)
+Caused by: java.lang.ClassNotFoundException: edu.jsu.mcis.HelloWorld
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 145 more</msg>
+</errors>
+</robot>
