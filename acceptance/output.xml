@@ -1,99 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_91)" generated="20160824 09:30:02.833">
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_91)" generated="20160826 13:48:40.605">
 <suite source="/home/nathan/Documents/school/CS_310/projects/jsu-se-hello-world/acceptance/HelloWorldTests.txt" name="HelloWorldTests" id="s1">
 <test name="Say Hello" id="s1-t1">
-<kw type="kw" name="Greet everyone">
+<kw type="kw" name="HelloWorldKeywords.Greet Everyone">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="FAIL" timestamp="20160824 09:30:03.115">No keyword with name 'Greet everyone' found.</msg>
-<status endtime="20160824 09:30:03.116" starttime="20160824 09:30:03.113" status="FAIL"></status>
+<status endtime="20160826 13:48:41.064" starttime="20160826 13:48:41.061" status="PASS"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20160824 09:30:03.119" starttime="20160824 09:30:03.107" status="FAIL">No keyword with name 'Greet everyone' found.</status>
+<status critical="yes" endtime="20160826 13:48:41.065" starttime="20160826 13:48:41.058" status="PASS"></status>
 </test>
 <test name="Say Hello In Pig Latin" id="s1-t2">
-<kw type="kw" name="Reverse greet everyone">
+<kw type="kw" name="HelloWorldKeywords.Reverse Greet Everyone">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="FAIL" timestamp="20160824 09:30:03.129">No keyword with name 'Reverse greet everyone' found.</msg>
-<status endtime="20160824 09:30:03.129" starttime="20160824 09:30:03.128" status="FAIL"></status>
+<status endtime="20160826 13:48:41.074" starttime="20160826 13:48:41.072" status="PASS"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20160824 09:30:03.131" starttime="20160824 09:30:03.122" status="FAIL">No keyword with name 'Reverse greet everyone' found.</status>
+<status critical="yes" endtime="20160826 13:48:41.075" starttime="20160826 13:48:41.068" status="PASS"></status>
 </test>
 <test name="Make Sure You're Saying Hello" id="s1-t3">
-<kw type="kw" name="${result} = Greet everyone">
+<kw type="kw" name="${result} = HelloWorldKeywords.Greet Everyone">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="FAIL" timestamp="20160824 09:30:03.276">No keyword with name 'Greet everyone' found.</msg>
-<status endtime="20160824 09:30:03.277" starttime="20160824 09:30:03.273" status="FAIL"></status>
+<msg level="INFO" timestamp="20160826 13:48:41.084">${result} = hello world</msg>
+<status endtime="20160826 13:48:41.083" starttime="20160826 13:48:41.081" status="PASS"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>hello world</arg>
+</arguments>
+<msg level="INFO" timestamp="20160826 13:48:41.088">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20160826 13:48:41.089" starttime="20160826 13:48:41.085" status="PASS"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20160824 09:30:03.279" starttime="20160824 09:30:03.133" status="FAIL">No keyword with name 'Greet everyone' found.</status>
+<status critical="yes" endtime="20160826 13:48:41.090" starttime="20160826 13:48:41.077" status="PASS"></status>
 </test>
 <test name="Make A Test That Fails" id="s1-t4">
-<kw type="kw" name="${result} = Reverse greet everyone">
+<kw type="kw" name="${result} = HelloWorldKeywords.Reverse Greet Everyone">
 <doc></doc>
 <arguments>
 </arguments>
-<msg level="FAIL" timestamp="20160824 09:30:03.287">No keyword with name 'Reverse greet everyone' found.</msg>
-<status endtime="20160824 09:30:03.288" starttime="20160824 09:30:03.286" status="FAIL"></status>
+<msg level="INFO" timestamp="20160826 13:48:41.098">${result} = dlrow olleh</msg>
+<status endtime="20160826 13:48:41.097" starttime="20160826 13:48:41.095" status="PASS"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>hello world</arg>
+</arguments>
+<msg level="INFO" timestamp="20160826 13:48:41.101">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg level="FAIL" timestamp="20160826 13:48:41.109">dlrow olleh != hello world</msg>
+<status endtime="20160826 13:48:41.110" starttime="20160826 13:48:41.099" status="FAIL"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status critical="yes" endtime="20160824 09:30:03.288" starttime="20160824 09:30:03.282" status="FAIL">No keyword with name 'Reverse greet everyone' found.</status>
+<status critical="yes" endtime="20160826 13:48:41.112" starttime="20160826 13:48:41.092" status="FAIL">dlrow olleh != hello world</status>
 </test>
 <doc></doc>
 <metadata>
 </metadata>
-<status endtime="20160824 09:30:03.292" starttime="20160824 09:30:02.837" status="FAIL"></status>
+<status endtime="20160826 13:48:41.115" starttime="20160826 13:48:40.610" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="4">Critical Tests</stat>
-<stat pass="0" fail="4">All Tests</stat>
+<stat pass="3" fail="1">Critical Tests</stat>
+<stat pass="3" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="4" name="HelloWorldTests" id="s1">HelloWorldTests</stat>
+<stat pass="3" fail="1" name="HelloWorldTests" id="s1">HelloWorldTests</stat>
 </suite>
 </statistics>
 <errors>
-<msg level="ERROR" timestamp="20160824 09:30:03.098">Error in file '/home/nathan/Documents/school/CS_310/projects/jsu-se-hello-world/acceptance/HelloWorldTests.txt': Initializing test library 'HelloWorldKeywords' with no arguments failed: NoClassDefFoundError: edu/jsu/mcis/HelloWorld
-java.lang.NoClassDefFoundError: 
-	at HelloWorldKeywords.&lt;init&gt;(HelloWorldKeywords.java:4)
-	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
-	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
-	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
-	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
-	at robot.run$py.main$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:408)
-	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
-	at robot.utils.application$py._execute$11(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:98)
-	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
-	at robot.utils.application$py.execute_cli$5(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:45)
-	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
-	at robot.run$py.run_cli$7(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:432)
-	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
-	at robot.jarrunner$py._run$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:60)
-	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
-	at robot.jarrunner$py.run$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:53)
-	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
-	at org.robotframework.RobotFramework.run(RobotFramework.java:62)
-	at org.robotframework.RobotFramework.main(RobotFramework.java:37)
-Caused by: java.lang.ClassNotFoundException: edu.jsu.mcis.HelloWorld
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 145 more</msg>
 </errors>
 </robot>
